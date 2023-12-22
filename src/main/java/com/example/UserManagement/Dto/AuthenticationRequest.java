@@ -1,16 +1,15 @@
 package com.example.UserManagement.Dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
+@Builder
 @AllArgsConstructor
-public class SignUpDTO {
-  private String username;
-  private String password;
-
-  private String confirmPassword;
-
+@NoArgsConstructor
+public class AuthenticationRequest {
+  private String email;
+  String password;
 }

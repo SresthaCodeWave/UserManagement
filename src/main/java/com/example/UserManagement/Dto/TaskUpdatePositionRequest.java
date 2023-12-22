@@ -5,12 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class SignUpDTO {
-  private String username;
-  private String password;
-
-  private String confirmPassword;
-
+@NoArgsConstructor
+public class TaskUpdatePositionRequest {
+  private Integer id;
+  private Integer sectionId;
+  private int position;
 }

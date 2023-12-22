@@ -7,10 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SignUpDTO {
-  private String username;
-  private String password;
-
-  private String confirmPassword;
+public class BoardUpdateRequest {
+  private String title;
+  private String description;
+  private Boolean favourite;
 
 }
